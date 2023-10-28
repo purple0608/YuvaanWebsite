@@ -9,89 +9,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 <style>
- .navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 50px; /* Adjust the height as needed */
-    background-color: rgba(255, 255, 255, 0.012); /* Adjust the transparency as needed */
-    z-index: 1000; /* Adjust as needed */
-    border-bottom: 1px solid #ccc; /* Optional: Add a border for distinction */
-    box-shadow: 0 2px 4px rgba(159, 159, 6, 0); /* Optional: Add a box shadow for distinction */
-}
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Dancing Script', cursive; /* Replace 'CursiveFontName' with the actual cursive font you want to use */
 }
-
-.navigation {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999;
-    background-color: transparent;
-}
-
-.navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.navigation li {
-    margin: 0;
-    padding: 0;
-}
-
-.navigation li.list {
-    margin: 0 25px; /* Increased margin for a longer line */
-}
-
-.navigation a {
-    text-decoration: none;
-    color: gainsboro;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    position: relative;
-}
-
-.navigation .circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: .5s;
-    border: 2px solid goldenrod; /* Added border style */
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    box-sizing: border-box; /* Ensures border is part of the width and height */
-    background-color: transparent; /* Removed background color */
-}
-
-.navigation li.active .circle {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-
-
-
-
-.indicator::before {
-    left: -30px;
-}
-
-.indicator::after {
-    right: -30px;
-}
-
 
 </style>
 </head>
@@ -120,80 +43,14 @@
       <div class="article-content">
         <h2 class="article-title">Coming Soon ...</h2>
         <p class="article-text">
-            Yuvaan, the annual cultural festival of IIIT Guwahati has played host to multitude of talented scholars and media moguls. Although, several college fests are organized across the country over the year but the grandeur of Yuvaan is majestic. Yuvaan, a much celebrated package of art, culture, expression with an overflow of excitement and energy. With sparkling aspirations, sterling accomplishments and bubbling enthusiasm, Yuvaan is a hub of the young and creative minds across the nation and receives a footfall of over 3,000 from across the length and breadth of the country. 
-            </p>
-            <p class="article-text">
-            YUVAAN intention is to enrich the awareness about different aspects of Indian Heritage with special focus to the North East Art and Culture thus inspiring the young mind to imbibe the values embedded in it. It seeks to inspire youth through experiencing the mysticism embodied in the rich and heterogeneous cultural tapestry of Indian Heritage, with a hope that the beauty, grace, values, and wisdom embodied in these arts will influence their way of life and thinking and inspire one to become a better human being. 
-            </p>
-            <p class="article-text">
-            The festival includes a number of events, competitions, pro-shows, informal activities, and highly anticipated cultural pronites. To further the scale of Yuvaan and the delight of its participants, special talks by highly eminent speakers and cultural workshops are featured. Yuvaan is the manifestation of the very spirit that IIITG fosters, i.e. it is the expression of creative excellence and technical prowess. It is also a jubilant celebration of cultural diversity and creative richness. From art to music to dance to writing - Yuvaan has every platform a creative soul could ask for, and even more.
+            Yuvaan, IIIT Guwahati's annual cultural festival, hosts talented scholars and media moguls, standing out as a majestic event amidst numerous college fests. It's a celebrated fusion of art, culture, and expression, attracting over 3,000 visitors from all over the country. YUVAAN aims to promote Indian Heritage, especially North East Art and Culture, inspiring young minds to embrace its values. The festival features diverse events, cultural pronites, talks by eminent speakers, and workshops. Yuvaan embodies IIITG's spirit of creative excellence and technical prowess while celebrating cultural diversity and creativity across various platforms.
         </p>
       </div>
       <div class="copy">© YUVAAN 2024</div>
     </article>
   </div>
 </div>
-<div class="navigation">
-  <ul>
-      <li class="list active">
-          <a href="#">
-              <span class="icon">
-                  <ion-icon name="home-outline"></ion-icon>
-              </span>
-              <span class="text">Home</span>
-              <span class="circle"></span>
-          </a>
-      </li>
-      <li class="list">
-          <a href="#">
-              <span class="icon">
-                  <ion-icon name="calendar-sharp"></ion-icon>
-              </span>
-              <span class="text">Events</span>
-              <span class="circle"></span>
-          </a>
-      </li>
-      <li class="list">
-          <a href="#">
-              <span class="icon">
-                  <ion-icon name="camera-outline"></ion-icon>
-              </span>
-              <span class="text">Archives</span>
-              <span class="circle"></span>
-          </a>
-      </li>
-      <li class="list">
-          <a href="#">
-              <span class="icon">
-                  <ion-icon name="cash-outline"></ion-icon>
-              </span>
-              <span class="text">Sponsers</span>
-              <span class="circle"></span>
-          </a>
-      </li>
-      <li class="list">
-          <a href="#">
-              <span class="icon">
-                  <ion-icon name="person-outline"></ion-icon>
-              </span>
-              <span class="text">Contact us</span>
-              <span class="circle"></span>
-          </a>
-      </li>
 
-      <li class="list">
-          <a href="#">
-              <span class="icon">
-                  <ion-icon name="person-outline"></ion-icon>
-              </span>
-              <span class="text">Our Team</span>
-              <span class="circle"></span>
-          </a>
-      </li>
-
-      <div class="indicator"></div>
-  </ul>
-</div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="forest.js" type="module"></script>
