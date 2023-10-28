@@ -3,33 +3,33 @@
 // import ScrollTrigger from 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js';
 // import ScrollToPlugin from 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js';
 
-gsap.registerPlugin(ScrollTrigger);
-const wrapper = document.querySelector('.wrapper');
-const content = document.querySelector('.content');
+// gsap.registerPlugin(ScrollTrigger);
+// const wrapper = document.querySelector('.wrapper');
+// const content = document.querySelector('.content');
 
-ScrollTrigger.create({
-  trigger: wrapper,
-  start: 'bottom bottom',
-  end: 'top top',
-  pin: true,
-});
+// ScrollTrigger.create({
+//   trigger: wrapper,
+//   start: 'bottom bottom',
+//   end: 'top top',
+//   pin: true,
+// });
 
 
 
-const handleScroll = () => {
-  const scrollTop = document.documentElement.scrollTop;
-  document.documentElement.style.setProperty('--scrollTop', `${scrollTop}px`);
-}
+// const handleScroll = () => {
+//   const scrollTop = document.documentElement.scrollTop;
+//   document.documentElement.style.setProperty('--scrollTop', `${scrollTop}px`);
+// }
 
-document.addEventListener('scroll', () => {
-  requestAnimationFrame(handleScroll);
-});
+// document.addEventListener('scroll', () => {
+//   requestAnimationFrame(handleScroll);
+// });
 
-const list = document.querySelectorAll(".list");
-function activeLink() {
-  list.forEach((item) => item.classList.remove("active"));
-  this.classList.add("active");
-}
+// const list = document.querySelectorAll(".list");
+// function activeLink() {
+//   list.forEach((item) => item.classList.remove("active"));
+//   this.classList.add("active");
+// }
 list.forEach((item) => item.addEventListener("click", activeLink));
 document.querySelectorAll('.navigation li').forEach(function(item) {
   item.addEventListener('mouseover', function() {
